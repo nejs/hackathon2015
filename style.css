@@ -40,11 +40,13 @@ h3 {
 .container-fluid {
   position: realtive;
   width: 100%;
+  min-width: 960px;
 }
 
 .container {
   position: relative;
   max-width: 960px;
+  min-width: 960px;
   margin: 0 auto;
 }
 
@@ -311,8 +313,130 @@ h3 {
   color: #fff;
 }
 
+.testeL, .testeR{
+  display: flex;
+  width: 488px;
+  z-index: 1;
+  margin-top: 50px;
+}
+.testeL {
+  margin-top: 130px;
+}
+
+.testeR{
+  width: 487px;
+  float: right;
+}
+
 #chronogram {
   background: #4f5e70;
+  height: 900px;
+}
+
+#chronogram .day {
+    position: absolute;
+    margin-left: 50%;
+    left: -45px;
+    margin-top: 30px;
+    height: 30px;
+    width: 90px;
+    background: #fff;
+    text-align: center;
+    font-size: 25px;
+    color: #4f5e70;
+    z-index: 1;
+}
+
+#chronogram .day.two {
+  margin-top: 100px;
+}
+
+#chronogram .lineP {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 50%;
+  height: 770px;
+  width: 0px;  
+  border-right-width: 2px;
+  border-right-style: dashed;
+  border-right-color: #fff;
+  z-index: 0;
+}
+
+#chronogram .infoL {
+  width: 682px;
+  margin: -15px auto 0 auto;
+}
+
+#chronogram .infoL .text, .infoR .text {  
+  height: 50px;
+  float: right;
+}
+
+#chronogram .infoL .text {
+  margin: -12px 0;
+}
+
+#chronogram .infoR .text {
+  margin: -22px 10px;
+}
+
+#chronogram .infoL .text .middle, .infoR .text .middle {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+#chronogram .infoL .hour, .infoR .hour {
+  margin: -13px 10px 0 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 45px;
+  text-align: center; 
+  border: 2px solid #70b19d;
+  border-radius: 30px;
+  background: #fff;
+  color: #4f5e70;
+  float: right;
+}
+
+#chronogram .infoR .hour {
+  margin: -22px 0 0 0;
+  float: left;
+}
+
+#chronogram .infoL .line, .infoR .line {
+  border: none;
+  border-top: 2px solid #fff;
+  width: 80px;
+  margin: 12px 0 0 -12px; 
+  float: right;
+}
+
+#chronogram .infoR .line {
+  margin: 2px 0 0 0; 
+  float: left;
+}
+
+#chronogram .infoL .point, .infoR .point {
+  width: 15px;
+  height: 15px;
+  background: #70b19d;
+  border: 3px solid #4f5e70;
+  box-shadow: 0 0 0 1px #fff;
+  border-radius: 20px;
+  margin: 5px 0 0 0;
+  float: right;
+}
+
+#chronogram .infoR .point {
+  margin: -5px 0 0 0;
+  float: left;
 }
 
 #sing-up {

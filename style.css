@@ -441,7 +441,13 @@ h3 {
 
 #sing-up {
   background: #d06c50;
-  height: 395px;
+  height: 275px;
+}
+
+#sing-up .ctBall {
+  float: left;
+  width: 100px;
+  margin: 0px 30px;
 }
 
 #sing-up .ball {
@@ -457,6 +463,28 @@ h3 {
   font-weight: bold;
 }
 
+#sing-up .line.one {
+  position: absolute;
+  left: 384px;
+  width: 62px;
+  top: 52px;
+  border-top-width: 2px;
+  border-top-style: dashed;
+  border-top-color: #fff;
+  transform: rotate(-20deg);
+}
+
+#sing-up .line.two {
+  position: absolute;
+  left: 519px;
+  width: 60px;
+  top: 40px;
+  border-top-width: 2px;
+  border-top-style: dashed;
+  border-top-color: #fff;
+  transform: rotate(15deg);
+}
+
 #sing-up .middle {
   display: table-cell;
   vertical-align: middle;
@@ -464,7 +492,8 @@ h3 {
 
 #sing-up .sing-center {
   margin: 0 auto;
-  width: 125px;
+  width: 520px;
+  margin-bottom: 30px;
 }
 
 #sponsors {

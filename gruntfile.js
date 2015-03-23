@@ -1,5 +1,3 @@
-require("copy-paste");
-
 var inspect = require("util").inspect;
 var fs = require("fs");
 var shell = require("shelljs");

@@ -249,12 +249,13 @@ h3 {
 }
 
 #participants {
-  height: 360px;
+  padding: 30px;
+  height: 390px;
 }
 
 #participants h3 {
   color: #666;
-  margin: 30px 0 80px 0;
+  margin: 0px 0 80px 0;
 }
 
 #participants .ct-img {
@@ -314,6 +315,7 @@ h3 {
 }
 
 .testeL, .testeR{
+  position: relative;
   display: flex;
   width: 488px;
   z-index: 1;
@@ -355,7 +357,7 @@ h3 {
   position: absolute;
   margin-top: 30px;
   margin-left: 50%;
-  height: 770px;
+  height: 768px;
   width: 0px;  
   border-right-width: 2px;
   border-right-style: dashed;
@@ -521,4 +523,61 @@ h3 {
 
 #sponsors .imgs > div > img {
   width: 100%;
+}
+
+#organizers {
+  height: 440px;  
+  padding: 30px 0;
+}
+
+#organizers h3 {
+  color: #666;
+}
+
+#organizers .frame {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#organizers img {
+  position: relative;
+  height: 245px;
+  width: 214px;
+  margin-top: 30px;
+  z-index: 1;
+}
+
+#organizers .photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.organizers .a {
+  position: absolute;
+}
+
+.organizers .a a {  
+  display: block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 30px;
+  background: #3fb29d;  
+  color: #fff;
+  padding-top: 1px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.organizers .git, .organizers .face {
+  margin-top: -3px;
+  left: -40px;
+  margin-left: 50%
+}
+
+.organizers .git {
+  left: 5px;
 }

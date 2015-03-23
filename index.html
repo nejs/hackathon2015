@@ -5,7 +5,23 @@
   <title>NEJS</title>
   <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css" type="text/css" />
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+  <script>
+    $(function(){
+      $(document).on('click', 'a', function(e){
+        e.preventDefault();
+        var a = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(a).position().top-70
+        }, 500);
+        
+      });
+    });
+  </script>
+
 </head>
 <body>
   <section id="main">
@@ -15,17 +31,17 @@
          <div class='nav' class='container'>
            <ul class='nav-ul'>
              <li class='nav-item'><a href="#about">Sobre</a></li>
-             <li class='nav-item'><a href="#participants">Quem deve participar</a></li>
-             <li class='nav-item'><a href="#chronogram">Cronograma</a></li>
-             <li class='nav-item'><a href="#place">Local</a></li>
+             <li class='nav-item'><a href="#participants">Quem pode participar</a></li>
+             <li class='nav-item'><a href="#chronogram">Cronograma</a></li>             
              <li class='nav-item'><a href="#sing-up">Inscreva-se</a></li>
              <li class='nav-item'><a href="#sponsors">Patrocinadores</a></li>
              <li class='nav-item'><a href="#organizers">Organizadores</a></li>
+             <li class='nav-item'><a href="#place">Local</a></li>
            </ul>
          </div>
          
          <div id='face'>
-           <a href="#" target='_blank'>f</a>
+           <a href="#" target='_blank'><i class="fa fa-facebook"></i></a>
          </div>
          
        </div> <!--#menu  -->
@@ -35,7 +51,7 @@
           <div class='container'>
             <div id='logo-nejs'>
               <div class='logo'>
-                <img src="img/logo.png" alt='logo'></img>  
+                <img src="img/logo.png" alt='logo'>  
               </div>
               <span>14 e 15 de julho • Instituto Metrópole Digital • Natal</span>
             </div>
@@ -78,14 +94,14 @@
           
           <div class='ct-img pro'>
             <div class='img'>
-              <img src="img/david.png"></img>
+              <img src="img/david.png">
             </div>
             <span>PROGRAMADORES</span>
           </div>
           
           <div class='ct-img des'>
             <div class='img'>
-              <img src="img/wanderley.png"></img>
+              <img src="img/wanderley.png">
             </div>
             <span>DESIGNERS</span>
           </div>
@@ -261,18 +277,18 @@
         </div>
       </div> <!-- ##sing-up -->
       
-      <div id='sponsors' class='contaien-fluid'>
+      <div id='sponsors' class='container-fluid'>
         <div class='container'>
           <h3>PATROCINADORES</h3>
           <div class='imgs'>
             <div>
-              <img src="img/imd.png" alt='IMD'></img>
+              <img src="img/imd.png" alt='IMD'>
             </div>
             <div>
-              <img src="img/ufrn.png" alt='UFRN'></img>
+              <img src="img/ufrn.png" alt='UFRN'>
             </div>
             <div>
-              <img src="img/microsoft.png" alt='MS'></img>
+              <img src="img/microsoft.png" alt='MS'>
             </div>
           </div>
         </div>
@@ -280,24 +296,47 @@
       
       <div id='organizers' class='container-fluid'>
         <h3>ORGANIZADORES</h3>
-        <div class='organizers containe'>
-          <div>
-            <img src=""></img>
-            <a href="">face</a>
-            <a href="">git</a>
+        <div class='organizers container'>
+          
+          <div class='frame'>
+            <img src="./img/moldura.png">            
+            <img class='photo' src="./img/foto_henri.png">
+            <div class='a face'>
+              <a href="#" target='_blank'><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class='a git'>
+              <a href="#" target='_blank'><i class="fa fa-github"></i></a>
+            </div>
           </div>
-          <div>
-            <img src=""></img>
-            <a href="">face</a>
-            <a href="">git</a>
-          </div> <div>
-            <img src=""></img>
-            <a href="">face</a>
-            <a href="">git</a>
-          </div> <div>
-            <img src=""></img>
-            <a href="">face</a>
-            <a href="">git</a>
+
+          <div class='frame'>
+            <img src="./img/moldura.png">            
+            <div class='a face'>
+              <a href="#" target='_blank'><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class='a git'>
+              <a href="#" target='_blank'><i class="fa fa-github"></i></a>
+            </div>
+          </div> 
+
+          <div class='frame'>
+            <img src="./img/moldura.png">            
+            <div class='a face'>
+              <a href="#" target='_blank'><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class='a git'>
+              <a href="#" target='_blank'><i class="fa fa-github"></i></a>
+            </div>            
+          </div> 
+
+          <div class='frame'>
+            <img src="./img/moldura.png">            
+            <div class='a face'>
+              <a href="#" target='_blank'><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class='a git'>
+              <a href="#" target='_blank'><i class="fa fa-github"></i></a>
+            </div>            
           </div>
         </div>
       </div> <!-- #organizers -->
@@ -307,7 +346,7 @@
           <div class='container'>
             <div class='center-place'>
               <h3>LOCAL</h3>
-              <img src="img/logoimd.png" alt='IMD' width='150'></img>
+              <img src="img/logoimd.png" alt='IMD' width='150'>
               <hr>
               <span>
                 Avenida Capitão Mor Gouveia, s/n <br>

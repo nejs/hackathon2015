@@ -34,6 +34,8 @@ h3 {
   top: 0;
   width: 100%;
   height: 100%;
+  min-width:  960px;
+  overflow-x: hidden;
 }
 
 .container-fluid {
@@ -211,14 +213,14 @@ h3 {
   left: 80px;
   height: 85px; 
   width: 109px;
-  background-image: url(img/nuvem1.png);
+  background-image: url(../img/nuvem2.png);
 
 }
 
 #featured #anima #wave1 {
   position: absolute;
   top: 700px;
-  background-image: url(img/onda1.png);
+  background-image: url(../img/onda1.png);
   width: 100%;
   height: 145px;
 }
@@ -226,7 +228,7 @@ h3 {
 #featured #anima #wave2 {
   position: absolute;
   top: 550px;
-  background-image: url(img/onda2.png);
+  background-image: url(../img/onda2.png);
   width: 100%;
   height: 145px;
 }
@@ -242,7 +244,7 @@ h3 {
 #featured #anima #wave3 {
   position: absolute;
   top: 625px;
-  background-image: url(img/onda3.png);
+  background-image: url(../img/onda3.png);
   width: 100%;
   height: 145px;
 }

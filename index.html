@@ -7,15 +7,13 @@
     <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
     <link rel='stylesheet' href='css/style.css' type='text/css' />
-    <script src='http://code.jquery.com/jquery-1.11.2.min.js'></script>
-    <script src='js/main.js'></script>
   </head>
   <body>
-    <section id='main'>
-      <div id='header' class='container-fluid'>
+    <div id="container">
+      <header id='header'>
 
-         <div id='menu-topo' class='container-fluid'>
-           <div class='nav' class='container'>
+        <nav id='menu-topo'>
+           <div class='nav'>
              <ul class='nav-ul'>
                <li class='nav-item'><a href='#about'>Sobre</a></li>
                <li class='nav-item'><a href='#participants'>Quem pode participar</a></li>
@@ -29,334 +27,301 @@
            <div id='face'>
              <a href='#' target='_blank'><i class='fa fa-facebook'></i></a>
            </div>
-         </div> <!-- #menu-topo -->
+        </nav>
 
-         <div id='featured'>
-          <div id='nejs' class='container-fluid'>
-            <div class='container'>
-              <div id='logo-nejs'>
-                <div class='logo'>
-                  <img src='img/logo.png' alt='logo'>  
-                </div>
-                <span>14 e 15 de julho • Instituto Metrópole Digital • Natal</span>
+        <div id='logo-nejs'>
+          <div class='logo'>
+            <img src='img/logo.png' alt='logo'>  
+          </div>
+          <span>14 e 15 de julho • Instituto Metrópole Digital • Natal</span>
+        </div>
+
+        <div id='sun'></div>
+        <div id='clouds'></div>
+        <img id='newton-navarro' src='img/ponte.png'>
+        <img id='morro-careca' src='img/morro.png'>
+        <div id='sand'></div>
+        <div id='wave2'></div>
+        <img id='developer' src='img/developer.png'>
+        <div id='wave3'></div>
+        <div id='wave1'></div>
+
+      </header>
+
+      <section id='about' class="flex-container">
+        <div>
+          <h3>SOBRE O EVENTO</h3>
+          <p>
+            Hackathon significa maratona de programação. O termo resulta de uma combinação <br>
+            das palavras inglesas “hack” (programar de forma excepcional) e “marathon” (maratona).<br>
+            O Hackathon é um evento que reúne programadores, designers e outros <br>
+            profissionais ligados ao desenvolvimento de software para uma maratona de <br>
+            programação, cujo objetivo é desenvolver um software que atenda <br>
+            a um fim específico ou projetos livres que sejam inovadores e utilizáveis.<br>
+          </p>
+        </div>
+      </section>
+
+      <section id='participants' class="flex-container">
+        <h3 id='participants-h3'>QUEM PODE PARTICIPAR</h3>
+        <div>
+
+          <div class='ct-img' data-sr="enter left move 200px, over 1s, reset">
+            <div class='img'>
+              <img src='img/david.png'>
+            </div>
+            <span>PROGRAMADORES</span>
+          </div>
+
+          <div class='ct-img' data-sr="enter right move 200px, over 1s, reset">
+            <div class='img'>
+              <img src='img/wanderley.png'>
+            </div>
+            <span>DESIGNERS</span>
+          </div>
+
+        </div>
+      </section> <!-- participants -->
+
+     <section id='chronogram' class="flex-container">
+
+      <div class='lineP'></div>
+       <div>
+          <h3>CRONOGRAMA</h3>
+          <div class='day'>
+            DIA 1
+          </div>
+
+          
+          <div class='event' data-sr="move 16px scale up 20%, over 2s, reset">
+              <div class='text'>
+                <div class='middle'>
+                  Credenciamento
+                </div> 
               </div>
-            </div>
+              <div class='hour'>7h</div>
+              <span class='line'></span>
+              <div class='point'></div>
+          </div>
+          
+          <div class='event' data-sr="move 16px scale up 20%, over 2s, reset">
+              <div class='text'>
+                <div class='middle'>
+                  Apresentação do Hackathon
+                </div>
+              </div>
+              <div class='hour'>8h</div>
+              <span class='line'></span>
+              <div class='point'></div>
           </div>
 
-          <div id='about' class='container-fluid'>
-            <div class='container'>
-              <h3>SOBRE O EVENTO</h3>
-              <p>
-                Hackathon significa maratona de programação. O termo resulta de uma combinação <br>
-                das palavras inglesas “hack” (programar de forma excepcional) e “marathon” (maratona).<br>
-                O Hackathon é um evento que reúne programadores, designers e outros <br>
-                profissionais ligados ao desenvolvimento de software para uma maratona de <br>
-                programação, cujo objetivo é desenvolver um software que atenda <br>
-                a um fim específico ou projetos livres que sejam inovadores e utilizáveis.<br>
-              </p>
-            </div>
+          <div class='event' data-sr="move 16px scale up 20%, over 2s, reset">
+              <div class='text'>
+                <div class='middle'>
+                  Formação dos grupos
+                </div> 
+              </div>
+              <div class='hour'>7h</div>
+              <span class='line'></span>
+              <div class='point'></div>
           </div>
 
-          <div id='anima'>
-            <div id='sun'></div>
-            <img src='img/nuvens.png' height='230' width='1296' style='position: absolute; left: 275px;'>
-            <img id='bridge' src='img/ponte.png'>
-            <div id='sand'></div>
-            <div id='wave2'></div>
-            <img id='le' src='img/leandro.png'>
-            <div id='wave3'></div>
-            <div id='wave1'></div>
+          <div class='event' data-sr="move 16px scale up 20%, over 2s, reset">
+              <div class='text'>
+                <div class='middle'>
+                  Sorteio e apresentação<br>da proposta do projeto
+                </div>
+              </div>
+              <div class='hour'>10h30</div>
+              <span class='line'></span>
+              <div class='point'></div>
           </div>
 
-        </div> <!-- #featured -->
+           <div class='event' data-sr="move 16px scale up 20%, over 2s, reset">
+              <div class='text'>
+                <div class='middle'>
+                  Almoço
+                </div> 
+              </div>
+              <div class='hour'>12h</div>
+              <span class='line'></span>
+              <div class='point'></div>
+          </div>
 
-      </div> <!-- #header --> 
+          <div class='event' data-sr="move 16px scale up 20%, over 2s, reset">
+              <div class='text'>
+                <div class='middle'>
+                  Pau na máquina<br>(Code Starting)
+                </div>
+              </div>
+              <div class='hour'>10h30</div>
+              <span class='line'></span>
+              <div class='point'></div>
+          </div>
+
+           <div class='day two'>
+            DIA 2
+          </div>
+
+          <!-- Hu3 Hu3 Hu3--><br><br><br>
+
+           <div class='event' data-sr="move 16px scale up 20%, over 2s, reset">
+              <div class='text'>
+                <div class='middle'>
+                  Hands up
+                </div> 
+              </div>
+              <div class='hour'>18h</div>
+              <span class='line'></span>
+              <div class='point'></div>
+          </div>
+
+           <div class='event' data-sr="move 16px scale up 20%, over 2s, reset">
+              <div class='text'>
+                <div class='middle'>
+                  Julgamento dos Projetos
+                </div>
+              </div>
+              <div class='hour'>19h</div>
+              <span class='line'></span>
+              <div class='point'></div>
+          </div>
+
+           <div class='event' data-sr="move 16px scale up 20%, over 2s, reset">
+              <div class='text'>
+                <div class='middle'>
+                  Divulgação do<br>resultado e premiação
+                </div> 
+              </div>
+              <div class='hour'>18h</div>
+              <span class='line'></span>
+              <div class='point'></div>
+          </div>
+
+
+       </div>
+     </section>
       
-      <div id='page' class='container-fluid'>
-        
-        <div id='participants' class='container-fluid'>
-          <h3 id='participants-h3'>QUEM PODE PARTICIPAR</h3>
-          <div class='container'>
+      <section id='sing-up' class="flex-container">
+        <div>
+          <h3>INSCREVA-SE</h3>
+          <div>
+            <div class='sing-center'>
 
-            <div class='ct-img pro'>
-              <div class='img'>
-                <img src='img/david.png'>
-              </div>
-              <span>PROGRAMADORES</span>
-            </div>
+              <div class='line one'></div>
+              <div class='line two'></div>
 
-            <div class='ct-img des'>
-              <div class='img'>
-                <img src='img/wanderley.png'>
-              </div>
-              <span>DESIGNERS</span>
-            </div>
-
-          </div>
-        </div> <!-- participants -->
-
-       <div id='chronogram' class='container-fluid'>
-         <div class='container'>
-            <h3>CRONOGRAMA</h3>
-            <div class='day'>
-              DIA 1
-            </div>
-
-            <div class='lineP'></div>
-            
-            <div class='testeL'>
-              <div class='infoL'>
-                <div class='point'></div>
-                <span class='line'></span>
-                <div class='hour'>7h</div>
-                <div class='text'>
-                  <div class='middle'>
-                    Credenciamento
-                  </div> 
+              <div class='ctBall' style='width: 125px;' data-sr="scale up 80%, over .5s, reset">
+                <div class='ball' style='width: 125px; height: 125px; font-size: 28px;'>
+                  <div class='middle' style='width: 150px;'>R$ 30,00</div>
                 </div>
               </div>
-            </div>
-            
-            <div class='testeR'>
-              <div class='infoR'>
-                <div class='point'></div>
-                <span class='line'></span>
-                <div class='hour'>8h</div>
-                <div class='text'>
-                  <div class='middle'>
-                    Apresentação do Hackathon
-                  </div>
+
+              <div class='ctBall' style='width: 75px; margin-top: -15px;' data-sr="scale up 20%, over 1s, reset">
+                <div class='ball' style='width: 75px; height: 75px; font-size: 18px;'>
+                  <div class='middle' style='width: 75px;'>até 21/06</div>
                 </div>
               </div>
-            </div>
 
-            <div class='testeL'>
-              <div class='infoL'>
-                <div class='point'></div>
-                <span class='line'></span>
-                <div class='hour'>7h</div>
-                <div class='text'>
-                  <div class='middle'>
-                    Formação dos grupos
-                  </div> 
+              <div class='ctBall' style='width: 100px;' data-sr="scale up 50%, over 1.5s, reset">
+                <div class='ball' style='background: #e9d6a0; box-shadow: 0 0 0 3px #e9d6a0; width: 100px; height: 100px; font-size: 20px;'>
+                  <div class='middle' style='width: 100px;'>CLIQUE AQUI</div>
                 </div>
               </div>
-            </div>
 
-            <div class='testeR'>
-              <div class='infoR'>
-                <div class='point'></div>
-                <span class='line'></span>
-                <div class='hour'>10h30</div>
-                <div class='text'>
-                  <div class='middle'>
-                    Sorteio e apresentação<br>da proposta do projeto
-                  </div>
-                </div>
-              </div>
-            </div>
-
-             <div class='testeL'>
-              <div class='infoL'>
-                <div class='point'></div>
-                <span class='line'></span>
-                <div class='hour'>12h</div>
-                <div class='text'>
-                  <div class='middle'>
-                    Almoço
-                  </div> 
-                </div>
-              </div>
-            </div>
-
-            <div class='testeR'>
-              <div class='infoR'>
-                <div class='point'></div>
-                <span class='line'></span>
-                <div class='hour'>10h30</div>
-                <div class='text'>
-                  <div class='middle'>
-                    Pau na máquina<br>(Code Starting)
-                  </div>
-                </div>
-              </div>
-            </div>
-
-             <div class='day two'>
-              DIA 2
-            </div>
-
-            <!-- Hu3 Hu3 Hu3--><br><br><br>
-
-             <div class='testeL'>
-              <div class='infoL'>
-                <div class='point'></div>
-                <span class='line'></span>
-                <div class='hour'>18h</div>
-                <div class='text'>
-                  <div class='middle'>
-                    Hands up
-                  </div> 
-                </div>
-              </div>
-            </div>
-
-             <div class='testeR'>
-              <div class='infoR'>
-                <div class='point'></div>
-                <span class='line'></span>
-                <div class='hour'>19h</div>
-                <div class='text'>
-                  <div class='middle'>
-                    Julgamento dos Projetos
-                  </div>
-                </div>
-              </div>
-            </div>
-
-             <div class='testeL'>
-              <div class='infoL'>
-                <div class='point'></div>
-                <span class='line'></span>
-                <div class='hour'>18h</div>
-                <div class='text'>
-                  <div class='middle'>
-                    Divulgação do<br>resultado e premiação
-                  </div> 
-                </div>
-              </div>
-            </div>
-
-
-         </div>
-       </div> <!-- chronogram -->
-        
-        <div id='sing-up' class='container-fluid'>
-          <div class='container'>
-            <h3>INSCREVA-SE</h3>
-            <div class='container'>
-              <div class='sing-center'>
-
-                <div class='line one'></div>
-                <div class='line two'></div>
-
-                <div class='ctBall' style='width: 125px;'>
-                  <div class='ball' style='width: 125px; height: 125px; font-size: 28px;'>
-                    <div class='middle' style='width: 150px;'>R$ 30,00</div>
-                  </div>
-                </div>
-
-                <div class='ctBall' style='width: 75px; margin-top: -15px;'>
-                  <div class='ball' style='width: 75px; height: 75px; font-size: 18px;'>
-                    <div class='middle' style='width: 75px;'>até 21/06</div>
-                  </div>
-                </div>
-
-                <div class='ctBall' style='width: 100px;'>
-                  <div class='ball' style='background: #e9d6a0; box-shadow: 0 0 0 3px #e9d6a0; width: 100px; height: 100px; font-size: 20px;'>
-                    <div class='middle' style='width: 100px;'>CLIQUE AQUI</div>
-                  </div>
-                </div>
-
-              </div>
             </div>
           </div>
-        </div> <!-- #sing-up -->
+        </div>
+      </section>
 
-        <div id='sponsors' class='container-fluid'>
-          <div class='container'>
-            <h3 id='sponsors-h3'>PATROCINADORES</h3>
-            <div class='imgs'>
-              <div>
-                <img src='img/imd.png' alt='IMD'>
-              </div>
-              <div>
-                <img src='img/ufrn.png' alt='UFRN'>
-              </div>
-              <div>
-                <img src='img/microsoft.png' alt='MS'>
-              </div>
+      <section id='sponsors' class="flex-container">
+        <div>
+          <h3 id='sponsors-h3'>PATROCINADORES</h3>
+          <div class='imgs'>
+            <div>
+              <img src='img/imd.png' alt='IMD'>
+            </div>
+            <div>
+              <img src='img/ufrn.png' alt='UFRN'>
+            </div>
+            <div>
+              <img src='img/microsoft.png' alt='MS'>
             </div>
           </div>
-        </div> <!-- #sponsors -->
+        </div>
+      </section>
 
-        <div id='organizers' class='container-fluid'>
-          <h3 id='organizers-h3'>ORGANIZADORES</h3>
-          <div class='organizers container'>
-
-            <div class='frame'>
-              <img src='./img/moldura.png'>
-              <img class='photo' src='./img/foto_henri.png'>
-              <div class='a face'>
-                <a href='#' target='_blank'><i class='fa fa-facebook'></i></a>
-              </div>
-              <div class='a git'>
-                <a href='#' target='_blank'><i class='fa fa-github'></i></a>
-              </div>
-            </div>
-
-            <div class='frame'>
-              <img src='./img/moldura.png'>
-              <div class='a face'>
-                <a href='#' target='_blank'><i class='fa fa-facebook'></i></a>
-              </div>
-              <div class='a git'>
-                <a href='#' target='_blank'><i class='fa fa-github'></i></a>
-              </div>
-            </div> 
-
-            <div class='frame'>
-              <img src='./img/moldura.png'>
-              <div class='a face'>
-                <a href='#' target='_blank'><i class='fa fa-facebook'></i></a>
-              </div>
-              <div class='a git'>
-                <a href='#' target='_blank'><i class='fa fa-github'></i></a>
-              </div>
-            </div> 
-
-            <div class='frame'>
-              <img src='./img/moldura.png'>
-              <div class='a face'>
-                <a href='#' target='_blank'><i class='fa fa-facebook'></i></a>
-              </div>
-              <div class='a git'>
-                <a href='#' target='_blank'><i class='fa fa-github'></i></a>
-              </div>
-            </div>
-          </div>
-        </div> <!-- #organizers -->
-      
-        <div id='place' class='container-fluid'>
-          <div class='local'>
-            <div class='container'>
-              <div class='center-place'>
-                <h3>LOCAL</h3>
-                <img src='img/logoimd.png' alt='IMD' width='150'>
-                <hr>
-                <span>
-                  Avenida Capitão Mor Gouveia, s/n <br>
-                  Lagoa Nova - Natal - Rio Grande do Norte
-                </span>
-              </div>
+      <section id='organizers' class="flex-container">
+        <h3 id='organizers-h3'>ORGANIZADORES</h3>
+        <div id="organizers-person">
+          <div class='frame' data-sr="enter top move 150px, over 0.5s, reset">
+            <canvas id="canvas-henricavalcante" width="214" height="218"></canvas>
+            <div class="flex-container">
+              <a href='http://facebook.com/henricavalcante' target='_blank'><i class='fa fa-facebook'></i></a>
+              <a href='http://github.com/henricavalcante' target='_blank'><i class='fa fa-github'></i></a>
             </div>
           </div>
 
-          <div class='map'>
-            <iframe src='https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15878.96601926203!2d-35.2972329!3d-5.750303499999999!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1426352941168' width='100%' height='300px' frameborder='0' style='border:0'></iframe>
+          <div class='frame' data-sr="enter top move 150px, over 0.7s, reset">
+            <canvas id="canvas-yanjustino" width="214" height="218"></canvas>
+            <div class="flex-container">
+              <a href='http://facebook.com/yanjustino' target='_blank'><i class='fa fa-facebook'></i></a>
+              <a href='http://github.com/yanjustino' target='_blank'><i class='fa fa-github'></i></a>
+            </div>
           </div>
-        </div> <!-- #place -->
 
-      </div> <!-- #page -->
-      
-      <div class='footer container-fluid'>
-        <h5>DÚVIDAS?</h5>
-        <span>
-          84 3254.6989 ou <a href='mailto:contato@henrimichel.com.br'>contato@henrimichel.com.br</a>
-        </span>
+          <div class='frame' data-sr="enter top move 150px, over 0.9s, reset">
+            <canvas id="canvas-davidwebmaster" width="214" height="218"></canvas>
+            <div class="flex-container">
+              <a href='http://facebook.com/davidwebmaster' target='_blank'><i class='fa fa-facebook'></i></a>
+              <a href='http://github.com/davidwebmaster' target='_blank'><i class='fa fa-github'></i></a>
+            </div>
+          </div>
 
-      </div> <!-- #footer -->
+          <div class='frame' data-sr="enter top move 150px, over 1.1s, reset">
+            <canvas id="canvas-batusa" width="214" height="218"></canvas>
+            <div class="flex-container">
+              <a href='http://facebook.com/batusa' target='_blank'><i class='fa fa-facebook'></i></a>
+              <a href='http://github.com/batusa' target='_blank'><i class='fa fa-github'></i></a>
+            </div>
+          </div>
 
-    </section>
+          <div class='frame' data-sr="enter top move 150px, over 1.3s, reset">
+            <canvas id="canvas-wanderleypassos" width="214" height="218"></canvas>
+            <div class="flex-container">
+              <a href='http://facebook.com/wanderleypassos' target='_blank'><i class='fa fa-facebook'></i></a>
+              <a href='http://github.com/wanderleypassos' target='_blank'><i class='fa fa-github'></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    
+      <section id='place'>
+        <div class='local'>
+          <div>
+            <div class='center-place'>
+              <h3>LOCAL</h3>
+              <img src='img/logoimd.png' alt='IMD' width='150'>
+              <hr>
+              <span>
+                Avenida Capitão Mor Gouveia, s/n <br>
+                Lagoa Nova - Natal - Rio Grande do Norte
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class='map'>
+          <iframe class="scrolloff" id="map-canvas" src='https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15878.96601926203!2d-35.2972329!3d-5.750303499999999!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1426352941168' width='100%' height='300px' frameborder='0' style='border:0'></iframe>
+        </div>
+      </section>
+
+      <footer>
+      </footer>
+
+    </div>
+    <script src='js/vendor.js'></script>
+    <script src='js/main.js'></script>
   </body>
 </html>

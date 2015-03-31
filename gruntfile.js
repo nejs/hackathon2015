@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         newcap: false,
         noarg: true,
         sub: true,
-        undef: true,
+        undef: false,
         boss: true,
         eqnull: true,
         node: true,
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
         src: [
           "gruntfile.js",
           "*.js",
-          "js/*.js",
+          "src/js/*.js",
         ]
       }
     },
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
         options: {
           csslintrc: '.csslintrc'
         },
-        src: ['css/*.css']
+        src: ['src/css/*.css']
       }
     }
   });

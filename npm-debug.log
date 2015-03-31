@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'velocity-animation',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'velocity-animation', null ]
+6 verbose cache add name=undefined spec="velocity-animation" args=["velocity-animation",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'velocity-animation',
+7 verbose parsed url   path: 'velocity-animation',
+7 verbose parsed url   href: 'velocity-animation' }
+8 silly lockFile e846f314-velocity-animation velocity-animation
+9 verbose lock velocity-animation /Users/henrimichel/.npm/e846f314-velocity-animation.lock
+10 silly lockFile e846f314-velocity-animation velocity-animation
+11 silly lockFile e846f314-velocity-animation velocity-animation
+12 verbose addNamed [ 'velocity-animation', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile d166d105-velocity-animation velocity-animation@
+15 verbose lock velocity-animation@ /Users/henrimichel/.npm/d166d105-velocity-animation.lock
+16 silly addNameRange { name: 'velocity-animation', range: '*', hasData: false }
+17 verbose request where is /velocity-animation
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 50c5d75f52e2f7b8
+20 verbose url raw /velocity-animation
+21 verbose url resolving [ 'https://registry.npmjs.org/', './velocity-animation' ]
+22 verbose url resolved https://registry.npmjs.org/velocity-animation
+23 verbose request where is https://registry.npmjs.org/velocity-animation
+24 info trying registry request attempt 1 at 07:12:48
+25 http GET https://registry.npmjs.org/velocity-animation
+26 http 404 https://registry.npmjs.org/velocity-animation
+27 verbose headers { date: 'Tue, 31 Mar 2015 10:12:49 GMT',
+27 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 verbose headers   'content-type': 'application/json',
+27 verbose headers   'cache-control': 'max-age=0',
+27 verbose headers   'content-length': '51',
+27 verbose headers   'accept-ranges': 'bytes',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   age: '0',
+27 verbose headers   'x-served-by': 'cache-jfk1030-JFK',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1427796769.097521,VS0,VE81',
+27 verbose headers   'keep-alive': 'timeout=10, max=50',
+27 verbose headers   connection: 'Keep-Alive' }
+28 silly registry.get cb [ 404,
+28 silly registry.get   { date: 'Tue, 31 Mar 2015 10:12:49 GMT',
+28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=0',
+28 silly registry.get     'content-length': '51',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     'x-served-by': 'cache-jfk1030-JFK',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1427796769.097521,VS0,VE81',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 silly lockFile d166d105-velocity-animation velocity-animation@
+30 silly lockFile d166d105-velocity-animation velocity-animation@
+31 error 404 404 Not Found: velocity-animation
+31 error 404
+31 error 404 'velocity-animation' is not in the npm registry.
+31 error 404 You should bug the author to publish it
+31 error 404 It was specified as a dependency of 'hackathon2015'
+31 error 404
+31 error 404 Note that you can also install from a
+31 error 404 tarball, folder, or http url, or git url.
+32 error System Darwin 14.1.0
+33 error command "node" "/usr/local/bin/npm" "install" "velocity-animation" "--save"
+34 error cwd /Users/henrimichel/git/nejs/hackathon2015
+35 error node -v v0.10.32
+36 error npm -v 1.4.28
+37 error code E404
+38 verbose exit [ 1, true ]

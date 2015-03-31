@@ -34,7 +34,7 @@ h3 {
   top: 0;
   width: 100%;
   height: 100%;
-  min-width:  960px;
+  min-width:  1088px;
   overflow-x: hidden;
 }
 
@@ -46,8 +46,6 @@ h3 {
 
 .container {
   position: relative;
-  max-width: 960px;
-  min-width: 960px;
   margin: 0 auto;
 }
 
@@ -348,6 +346,7 @@ h3 {
     font-size: 25px;
     color: #4f5e70;
     z-index: 1;
+    padding-top: 6px;
 }
 
 #chronogram .day.two {
@@ -541,14 +540,6 @@ h3 {
   margin: 0 10px;
 }
 
-#organizers img {
-  position: relative;
-  height: 245px;
-  width: 214px;
-  margin-top: 30px;
-  z-index: 1;
-}
-
 #organizers .photo {
   position: absolute;
   left: 0;
@@ -568,7 +559,7 @@ h3 {
   font-size: 30px;
   background: #3fb29d;  
   color: #fff;
-  padding-top: 1px;
+  padding-top: 3px;
   text-align: center;
   font-weight: bold;
 }
@@ -581,4 +572,8 @@ h3 {
 
 .organizers .git {
   left: 5px;
+}
+
+.scrolloff {
+  pointer-events: none;
 }

@@ -73,7 +73,7 @@
       context.restore();
     },
 	  sources = {
-	  	frame: '/img/moldura.png',
+	  	frame: 'img/moldura.png',
 	    henricavalcante: 'https://avatars.githubusercontent.com/u/2352034?v=3',
 	    yanjustino: 'https://avatars.githubusercontent.com/u/357114?v=3',
 	    davidwebmaster: 'https://avatars.githubusercontent.com/u/3306913?v=3',

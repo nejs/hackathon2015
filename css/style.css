@@ -493,7 +493,7 @@ h3 {
 #organizers-person .frame {
   position: relative;
   display: inline-block;
-  width: 220px;
+  width: 231px;
 }
 
 #organizers-person .frame div.flex-container {
@@ -519,17 +519,16 @@ h3 {
 }
 
 .organizers-img {
-  width: 214px;
-  height: 218px;
+  width: 231px;
+  height: 221px;
   position: relative;
   overflow: hidden;
 }
 
 .organizers-img img.avatar {
-  top: -5px;
   position: absolute;
-  width: 213px;
-  height: 208px;
+  width: 231px;
+  height: 231px;
   -webkit-filter: grayscale(1); /* Webkit */
   filter: gray; /* IE6-9 */
   filter: grayscale(1); /* W3C */
@@ -537,7 +536,22 @@ h3 {
 
 .organizers-img .moldura {
   position: absolute;
-  width: 214px;
-  height: 218px;
+  width: 100%;
+  height: 100%;
   background-image: url(../img/moldura.png);
+}
+
+.organizers-img .nome {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  bottom: 0px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  color: #fff;
+}
+
+span.first-name {
+  color: #455e70;
 }

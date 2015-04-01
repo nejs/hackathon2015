@@ -35,7 +35,7 @@
 	    for(var src in sources) {
 	    	numImages++;
 	      images[src] = new Image();
-	      images[src].crossOrigin = "Anonymous";
+	      images[src].crossOrigin = "*";
 	      images[src].onload = checkFinish;
 	      images[src].src = sources[src];
 	    }

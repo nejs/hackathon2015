@@ -194,7 +194,7 @@ h3 {
 #clouds {
   position: absolute;
   height:230px;
-  width:1296px;
+  width:100%;
   top:100px;
   background-image: url(../img/nuvens.png);
 }
@@ -496,7 +496,7 @@ h3 {
   width: 220px;
 }
 
-#organizers-person .frame div {
+#organizers-person .frame div.flex-container {
   width: 50%;
 }
 
@@ -516,4 +516,28 @@ h3 {
 
 .scrolloff {
   pointer-events: none;
+}
+
+.organizers-img {
+  width: 214px;
+  height: 218px;
+  position: relative;
+  overflow: hidden;
+}
+
+.organizers-img img.avatar {
+  top: -5px;
+  position: absolute;
+  width: 213px;
+  height: 208px;
+  -webkit-filter: grayscale(1); /* Webkit */
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* W3C */
+}
+
+.organizers-img .moldura {
+  position: absolute;
+  width: 214px;
+  height: 218px;
+  background-image: url(../img/moldura.png);
 }

@@ -109,6 +109,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.registerTask('default', ['jshint', 'concat:dist', 'uglify:dist', 'csslint:lax', 'cssmin:dist', 'imagemin']);
+  grunt.registerTask('test', ['jshint', 'csslint:lax']);
+  grunt.registerTask('build', ['concat:dist', 'uglify:dist', 'cssmin:dist', 'imagemin']);
 
 
 };

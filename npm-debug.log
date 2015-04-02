@@ -2,13 +2,13 @@
 1 verbose cli [ 'node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   'velocity-animation',
-1 verbose cli   '--save' ]
+1 verbose cli   'grunt-contrib-concat',
+1 verbose cli   '--save-dev' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
 4 verbose readDependencies using package.json deps
-5 verbose cache add [ 'velocity-animation', null ]
-6 verbose cache add name=undefined spec="velocity-animation" args=["velocity-animation",null]
+5 verbose cache add [ 'grunt-contrib-concat', null ]
+6 verbose cache add name=undefined spec="grunt-contrib-concat" args=["grunt-contrib-concat",null]
 7 verbose parsed url { protocol: null,
 7 verbose parsed url   slashes: null,
 7 verbose parsed url   auth: null,
@@ -18,71 +18,91 @@
 7 verbose parsed url   hash: null,
 7 verbose parsed url   search: null,
 7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: 'velocity-animation',
-7 verbose parsed url   path: 'velocity-animation',
-7 verbose parsed url   href: 'velocity-animation' }
-8 silly lockFile e846f314-velocity-animation velocity-animation
-9 verbose lock velocity-animation /Users/henrimichel/.npm/e846f314-velocity-animation.lock
-10 silly lockFile e846f314-velocity-animation velocity-animation
-11 silly lockFile e846f314-velocity-animation velocity-animation
-12 verbose addNamed [ 'velocity-animation', '' ]
+7 verbose parsed url   pathname: 'grunt-contrib-concat',
+7 verbose parsed url   path: 'grunt-contrib-concat',
+7 verbose parsed url   href: 'grunt-contrib-concat' }
+8 silly lockFile 2cb61a47-grunt-contrib-concat grunt-contrib-concat
+9 verbose lock grunt-contrib-concat /Users/henrimichel/.npm/2cb61a47-grunt-contrib-concat.lock
+10 silly lockFile 2cb61a47-grunt-contrib-concat grunt-contrib-concat
+11 silly lockFile 2cb61a47-grunt-contrib-concat grunt-contrib-concat
+12 verbose addNamed [ 'grunt-contrib-concat', '' ]
 13 verbose addNamed [ null, '*' ]
-14 silly lockFile d166d105-velocity-animation velocity-animation@
-15 verbose lock velocity-animation@ /Users/henrimichel/.npm/d166d105-velocity-animation.lock
-16 silly addNameRange { name: 'velocity-animation', range: '*', hasData: false }
-17 verbose request where is /velocity-animation
+14 silly lockFile 9f2aab3b-grunt-contrib-concat grunt-contrib-concat@
+15 verbose lock grunt-contrib-concat@ /Users/henrimichel/.npm/9f2aab3b-grunt-contrib-concat.lock
+16 silly addNameRange { name: 'grunt-contrib-concat', range: '*', hasData: false }
+17 verbose request where is /grunt-contrib-concat
 18 verbose request registry https://registry.npmjs.org/
-19 verbose request id 50c5d75f52e2f7b8
-20 verbose url raw /velocity-animation
-21 verbose url resolving [ 'https://registry.npmjs.org/', './velocity-animation' ]
-22 verbose url resolved https://registry.npmjs.org/velocity-animation
-23 verbose request where is https://registry.npmjs.org/velocity-animation
-24 info trying registry request attempt 1 at 07:12:48
-25 http GET https://registry.npmjs.org/velocity-animation
-26 http 404 https://registry.npmjs.org/velocity-animation
-27 verbose headers { date: 'Tue, 31 Mar 2015 10:12:49 GMT',
-27 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-27 verbose headers   'content-type': 'application/json',
-27 verbose headers   'cache-control': 'max-age=0',
-27 verbose headers   'content-length': '51',
-27 verbose headers   'accept-ranges': 'bytes',
-27 verbose headers   via: '1.1 varnish',
-27 verbose headers   age: '0',
-27 verbose headers   'x-served-by': 'cache-jfk1030-JFK',
-27 verbose headers   'x-cache': 'MISS',
-27 verbose headers   'x-cache-hits': '0',
-27 verbose headers   'x-timer': 'S1427796769.097521,VS0,VE81',
-27 verbose headers   'keep-alive': 'timeout=10, max=50',
-27 verbose headers   connection: 'Keep-Alive' }
-28 silly registry.get cb [ 404,
-28 silly registry.get   { date: 'Tue, 31 Mar 2015 10:12:49 GMT',
-28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-28 silly registry.get     'content-type': 'application/json',
-28 silly registry.get     'cache-control': 'max-age=0',
-28 silly registry.get     'content-length': '51',
-28 silly registry.get     'accept-ranges': 'bytes',
+19 verbose request id 87f687da197e42d2
+20 verbose url raw /grunt-contrib-concat
+21 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-concat' ]
+22 verbose url resolved https://registry.npmjs.org/grunt-contrib-concat
+23 verbose request where is https://registry.npmjs.org/grunt-contrib-concat
+24 info trying registry request attempt 1 at 10:00:06
+25 verbose etag "7EG7A1FGU7PSDNQDN72PJJ99Q"
+26 http GET https://registry.npmjs.org/grunt-contrib-concat
+27 http 304 https://registry.npmjs.org/grunt-contrib-concat
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Thu, 02 Apr 2015 13:00:08 GMT',
+28 silly registry.get     server: 'Apache',
 28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     'last-modified': 'Thu, 02 Apr 2015 13:00:08 GMT',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     etag: '"7EG7A1FGU7PSDNQDN72PJJ99Q"',
 28 silly registry.get     age: '0',
-28 silly registry.get     'x-served-by': 'cache-jfk1030-JFK',
-28 silly registry.get     'x-cache': 'MISS',
-28 silly registry.get     'x-cache-hits': '0',
-28 silly registry.get     'x-timer': 'S1427796769.097521,VS0,VE81',
+28 silly registry.get     'x-served-by': 'cache-iad2144-IAD',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '1',
+28 silly registry.get     'x-timer': 'S1427979608.024362,VS0,VE86',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'content-length': '0',
 28 silly registry.get     'keep-alive': 'timeout=10, max=50',
 28 silly registry.get     connection: 'Keep-Alive' } ]
-29 silly lockFile d166d105-velocity-animation velocity-animation@
-30 silly lockFile d166d105-velocity-animation velocity-animation@
-31 error 404 404 Not Found: velocity-animation
-31 error 404
-31 error 404 'velocity-animation' is not in the npm registry.
-31 error 404 You should bug the author to publish it
-31 error 404 It was specified as a dependency of 'hackathon2015'
-31 error 404
-31 error 404 Note that you can also install from a
-31 error 404 tarball, folder, or http url, or git url.
-32 error System Darwin 14.1.0
-33 error command "node" "/usr/local/bin/npm" "install" "velocity-animation" "--save"
-34 error cwd /Users/henrimichel/git/nejs/hackathon2015
-35 error node -v v0.10.32
-36 error npm -v 1.4.28
-37 error code E404
-38 verbose exit [ 1, true ]
+29 verbose etag https://registry.npmjs.org/grunt-contrib-concat from cache
+30 silly addNameRange number 2 { name: 'grunt-contrib-concat', range: '*', hasData: true }
+31 silly addNameRange versions [ 'grunt-contrib-concat',
+31 silly addNameRange   [ '0.1.0',
+31 silly addNameRange     '0.1.1',
+31 silly addNameRange     '0.1.2',
+31 silly addNameRange     '0.1.3',
+31 silly addNameRange     '0.2.0',
+31 silly addNameRange     '0.3.0',
+31 silly addNameRange     '0.4.0',
+31 silly addNameRange     '0.5.0',
+31 silly addNameRange     '0.5.1',
+31 silly addNameRange     '0.1.2-rc5',
+31 silly addNameRange     '0.1.2-rc6' ] ]
+32 verbose addNamed [ 'grunt-contrib-concat', '0.5.1' ]
+33 verbose addNamed [ '0.5.1', '0.5.1' ]
+34 silly lockFile 63a362d5-grunt-contrib-concat-0-5-1 grunt-contrib-concat@0.5.1
+35 verbose lock grunt-contrib-concat@0.5.1 /Users/henrimichel/.npm/63a362d5-grunt-contrib-concat-0-5-1.lock
+36 silly lockFile f6eb0009-t-grunt-contrib-concat-0-5-1-tgz https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz
+37 verbose lock https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz /Users/henrimichel/.npm/f6eb0009-t-grunt-contrib-concat-0-5-1-tgz.lock
+38 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz',
+38 verbose addRemoteTarball   '953c6efdfdfd2c107ab9c85077f2d4b24d31cd49' ]
+39 info retry fetch attempt 1 at 10:00:10
+40 verbose fetch to= /var/folders/xs/5txh2yb17gq657s1hf9k6gfw0000gn/T/npm-67838-pefbHZz3/registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz
+41 http GET https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz
+42 http 200 https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz
+43 silly lockFile f6eb0009-t-grunt-contrib-concat-0-5-1-tgz https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz
+44 silly lockFile f6eb0009-t-grunt-contrib-concat-0-5-1-tgz https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz
+45 silly lockFile 63a362d5-grunt-contrib-concat-0-5-1 grunt-contrib-concat@0.5.1
+46 silly lockFile 63a362d5-grunt-contrib-concat-0-5-1 grunt-contrib-concat@0.5.1
+47 silly lockFile 9f2aab3b-grunt-contrib-concat grunt-contrib-concat@
+48 silly lockFile 9f2aab3b-grunt-contrib-concat grunt-contrib-concat@
+49 error Error: EACCES, mkdir '/Users/henrimichel/.npm/grunt-contrib-concat/0.5.1'
+49 error  { [Error: EACCES, mkdir '/Users/henrimichel/.npm/grunt-contrib-concat/0.5.1']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/Users/henrimichel/.npm/grunt-contrib-concat/0.5.1',
+49 error   parent: 'hackathon2015' }
+50 error Please try running this command again as root/Administrator.
+51 error System Darwin 14.1.0
+52 error command "node" "/usr/local/bin/npm" "install" "grunt-contrib-concat" "--save-dev"
+53 error cwd /Users/henrimichel/git/nejs/hackathon2015
+54 error node -v v0.10.32
+55 error npm -v 1.4.28
+56 error path /Users/henrimichel/.npm/grunt-contrib-concat/0.5.1
+57 error code EACCES
+58 error errno 3
+59 error stack Error: EACCES, mkdir '/Users/henrimichel/.npm/grunt-contrib-concat/0.5.1'
+60 verbose exit [ 3, true ]

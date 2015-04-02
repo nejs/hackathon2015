@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON("package.json"),
+    pkg: grunt.file.readJSON('package.json'),
     jshint: {
       options: {
         curly: true,
@@ -40,9 +40,9 @@ module.exports = function(grunt) {
       },
       files: {
         src: [
-          "gruntfile.js",
-          "*.js",
-          "src/js/*.js",
+          'gruntfile.js',
+          '*.js',
+          'src/js/*.js',
         ]
       }
     },
@@ -56,13 +56,61 @@ module.exports = function(grunt) {
         },
         src: ['src/css/*.css']
       }
+    },
+    concat: {
+      options: {
+        separator: ';',
+      },
+      dist: {
+        src: ['node_modules/scrollreveal/dist/scrollReveal.min.js',
+          'node_modules/velocity-animate/velocity.min.js',
+          'src/js/main.js'],
+        dest: 'js/js.js',
+      },
+    },
+    uglify: {
+      options: {
+        mangle: false
+      },
+      dist: {
+        files: {
+          'js/js.js': ['js/js.js']
+        }
+      }
+    },
+    cssmin: {
+      options: {
+        shorthandCompacting: false,
+        roundingPrecision: -1
+      },
+      dist: {
+        files: {
+          'css/style.css': ['src/css/style.css']
+        }
+      }
+    },
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'src/img/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'img/'
+        }]
+      }
     }
   });
 
 
-  grunt.loadNpmTasks("grunt-contrib-jshint");
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-csslint');
-  grunt.registerTask("default", ["jshint", "csslint:lax"]);
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.registerTask('default', ['jshint', 'concat:dist', 'uglify:dist', 'csslint:lax', 'cssmin:dist', 'imagemin']);
+  grunt.registerTask('test', ['jshint', 'csslint:lax']);
+  grunt.registerTask('build', ['concat:dist', 'uglify:dist', 'cssmin:dist', 'imagemin']);
 
 
 };

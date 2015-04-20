@@ -122,7 +122,6 @@ h3 {
 
 #logo-nejs {
   display: block;
-  width: 650px;
   text-align: center;
   margin: 0 auto;
   z-index: 50;
@@ -142,7 +141,7 @@ h3 {
 }
 
 #about {
-  height: 350px;
+  padding-bottom: 45px;
   background: #309E8C;
 }
 
@@ -242,7 +241,7 @@ h3 {
 }
 
 #participants {
-  height: 390px;
+  padding-bottom: 45px;
 }
 
 #participants-h3 {
@@ -300,14 +299,14 @@ h3 {
 }
 
 #chronogram .day {
-    margin-top: 30px;
-    height: 30px;
-    width: 90px;
-    background: #fff;
-    text-align: center;
-    font-size: 25px;
-    color: #4f5e70;
-    padding-top: 6px;
+  margin-top: 30px;
+  height: 30px;
+  width: 90px;
+  background: #fff;
+  text-align: center;
+  font-size: 25px;
+  color: #4f5e70;
+  padding-top: 2px;
 }
 
 #chronogram .day.two {
@@ -395,7 +394,7 @@ h3 {
 
 #sign-up {
   background: #d06c50;
-  height: 308px;
+  padding-bottom: 45px;
 }
 
 #sign-up .ctBall {
@@ -451,7 +450,7 @@ h3 {
 }
 
 #sponsors {
-  height: 208px;
+  padding-bottom: 45px;
   background: #f5f5f5;
 }
 
@@ -466,6 +465,7 @@ h3 {
 
 #sponsors .imgs > div {
   width: 150px;
+  height: 60px;
   float: left;
   margin: 0 24px;
 }
@@ -551,6 +551,18 @@ h3 {
   color: #455e70;
 }
 
+.leokz {
+  color: #fff;
+  font-size: 14px;
+  float: left;
+}
+
 span.first-name {
   color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+  #logo-nejs span {
+    font-size: 18px;
+  }
 }

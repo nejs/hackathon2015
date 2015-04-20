@@ -29,7 +29,7 @@
   "selector-max": false,
   "shorthand": true,
   "text-indent": true,
-  "unique-headings": true,
+  "unique-headings": false,
   "universal-selector": false,
   "unqualified-attributes": false,
   "vendor-prefix": false,

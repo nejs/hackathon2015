@@ -242,6 +242,7 @@ h3 {
 
 #participants {
   padding-bottom: 45px;
+  text-align: center;
 }
 
 #participants-h3 {
@@ -310,7 +311,7 @@ h3 {
 }
 
 #chronogram .day.two {
-  margin-top: 100px;
+  margin: 80px auto;
 }
 
 #chronogram .lineP {
@@ -326,9 +327,14 @@ h3 {
 }
 
 #chronogram .event {
-  width: 682px;
+  margin-left: -150px;
   height: 56px;
   margin-top: 10px;
+}
+
+#chronogram .event:nth-child(even){  
+  margin-left: 0; 
+  margin-right: -150px;
 }
 
 #chronogram .event .text{  
@@ -454,6 +460,10 @@ h3 {
   background: #f5f5f5;
 }
 
+#sponsors-div {
+  text-align: center;
+}
+
 #sponsors-h3 {
   color: #666;
 }
@@ -466,7 +476,7 @@ h3 {
 #sponsors .imgs > div {
   width: 150px;
   height: 60px;
-  float: left;
+  display: inline-block;
   margin: 0 24px;
 }
 
@@ -475,7 +485,7 @@ h3 {
 }
 
 #organizers {
-  height: 440px;
+  padding-bottom: 45px;
 }
 
 #organizers-h3 {
@@ -483,15 +493,15 @@ h3 {
 }
 
 #organizers-person {
-
-  display: -webkit-flex;
-  display: flex;
+  display: block;
+  text-align: center;
 }
 
 #organizers-person .frame {
   position: relative;
   display: inline-block;
   width: 231px;
+  text-align: initial;
 }
 
 #organizers-person .frame div.flex-container {
@@ -565,4 +575,28 @@ span.first-name {
   #logo-nejs span {
     font-size: 18px;
   }
+
+  #chronogram .event {
+    margin-left: -2px;
+  }
+
+  #chronogram .event:nth-child(even) {
+    margin-left: 0;
+    margin-right: -5px;
+  }
+  
+  #chronogram .event .text {
+    display: none;
+  }
+
+  h3 {
+    font-size: 27px;
+  }
+
+  #chronogram .lineP {
+    margin-top: 164px;
+    height: 700px;
+  }
+
+
 }

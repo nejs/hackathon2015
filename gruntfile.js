@@ -98,7 +98,17 @@ module.exports = function(grunt) {
           dest: 'img/'
         }]
       }
-    }
+    },
+    watch: {
+      scripts: {
+        files: ['src/js/*.js'],
+        tasks: ['concat:dist', 'uglify:dist']
+      },
+      css: {
+        files: ['src/css/*.css'],
+        tasks: ['cssmin:dist']
+      },
+    },
   });
 
 
@@ -108,9 +118,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
   grunt.registerTask('default', ['jshint', 'concat:dist', 'uglify:dist', 'csslint:lax', 'cssmin:dist', 'imagemin']);
   grunt.registerTask('test', ['jshint', 'csslint:lax']);
   grunt.registerTask('build', ['concat:dist', 'uglify:dist', 'cssmin:dist', 'imagemin']);
+  
 
 
 };

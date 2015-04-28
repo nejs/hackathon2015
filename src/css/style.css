@@ -397,6 +397,21 @@ h3 {
   float: right;
 }
 
+#campaign-leokz {
+    width: 330px;
+    display: inline-block;
+
+}
+
+#campaign-video {
+    display: inline-block;
+}
+
+#campaign-video iframe {
+    height: 350px;
+    width: 600px;
+}
+
 #sign-up {
   background: #d06c50;
   padding-bottom: 45px;
@@ -450,7 +465,6 @@ h3 {
 
 #sign-up .sign-center {
   margin: 0 auto;
-  width: 520px;
   margin-bottom: 30px;
 }
 
@@ -459,11 +473,11 @@ h3 {
   background: #f5f5f5;
 }
 
-#sponsors-div {
+#sponsors-div, #campaign-div {
   text-align: center;
 }
 
-#sponsors-h3 {
+#sponsors-h3, #campaign-h3 {
   color: #666;
 }
 
@@ -597,4 +611,8 @@ span.first-name {
     height: 700px;
   }
 
+  #campaign-video iframe {
+    width: 400px;
+    height: 200px;
+  }
 }

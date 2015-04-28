@@ -145,14 +145,16 @@ h3 {
 }
 
 #about p {
-  display: block;
-  margin: 0 auto;  
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  text-align: center;
-  line-height: 24px;
+    display: block;
+    margin: 0 auto;  
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+    max-width: 700px;
+    text-align: justify;
 }
 
 #sun {
@@ -616,3 +618,4 @@ span.first-name {
     height: 200px;
   }
 }
+

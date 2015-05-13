@@ -146,12 +146,11 @@ h3 {
 
 #about p {
     display: block;
-    margin: 0 auto;  
+    margin: 0 auto;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 18px;
-    text-align: center;
     line-height: 24px;
     max-width: 700px;
     text-align: justify;
@@ -203,7 +202,7 @@ h3 {
   position: absolute;
   top: 70px;
   left: 80px;
-  height: 85px; 
+  height: 85px;
   width: 109px;
   background-image: url(../img/nuvem2.png);
 
@@ -237,7 +236,7 @@ h3 {
   position: absolute;
   top: 606px;
   left: 80px;
-  height:134px; 
+  height:134px;
   width: 97px;
 }
 
@@ -320,7 +319,7 @@ h3 {
   margin-top: 192px;
   margin-left: 50%;
   height: 690px;
-  width: 0px;  
+  width: 0px;
   border-right-width: 2px;
   border-right-style: dashed;
   border-right-color: #fff;
@@ -333,17 +332,17 @@ h3 {
   margin-top: 10px;
 }
 
-#chronogram .event:nth-child(even){  
-  margin-left: 0; 
+#chronogram .event:nth-child(even){
+  margin-left: 0;
   margin-right: -150px;
 }
 
-#chronogram .event .text{  
+#chronogram .event .text{
   height: 50px;
   width: 203px;
   float: left;
 }
-#chronogram .event:nth-child(even) .text{  
+#chronogram .event:nth-child(even) .text{
   float: right;
 }
 
@@ -363,14 +362,14 @@ h3 {
   font-size: 15px;
   font-weight: bold;
   line-height: 45px;
-  text-align: center; 
+  text-align: center;
   border: 2px solid #70b19d;
   border-radius: 30px;
   background: #fff;
   color: #4f5e70;
   float: left;
 }
-#chronogram .event:nth-child(even) .hour{  
+#chronogram .event:nth-child(even) .hour{
   float: right;
 }
 
@@ -378,10 +377,10 @@ h3 {
   border: none;
   border-top: 2px solid #fff;
   width: 80px;
-  margin: 25px 0 0; 
+  margin: 25px 0 0;
   float: left;
 }
-#chronogram .event:nth-child(even) .line{  
+#chronogram .event:nth-child(even) .line{
   float: right;
 }
 
@@ -395,7 +394,7 @@ h3 {
   margin: 18px 0 0 0;
   float: left;
 }
-#chronogram .event:nth-child(even) .point{  
+#chronogram .event:nth-child(even) .point{
   float: right;
 }
 
@@ -495,8 +494,10 @@ h3 {
   margin: 0 24px;
 }
 
-#sponsors .imgs > div > img {
-  width: 100%;
+#sponsors .imgs > a > img {
+  width: 200px;
+  padding: 10px;
+  vertical-align: middle;
 }
 
 #organizers {
@@ -530,7 +531,7 @@ h3 {
   height: 35px;
   line-height: 35px;
   font-size: 30px;
-  background: #455E70;  
+  background: #455E70;
   color: #fff;
   padding-top: 3px;
   text-align: center;
